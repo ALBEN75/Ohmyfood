@@ -10,6 +10,10 @@ body{
     margin: 0px;
     background-color: #F6F6F6;
 }
+header{
+    @include flexbox();
+    flex-direction: column;
+}
 
 main{
     margin: 0px;
