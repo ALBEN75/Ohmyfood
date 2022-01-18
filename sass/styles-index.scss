@@ -1,9 +1,19 @@
-@mixin flexbox-center {
-
-
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 body{
     font-family: 'Roboto', sans-serif;
-    
+    margin: 0px;
+    background-color: #F6F6F6;
+}
+
+main{
+    margin: 0px;
+    padding: 0px;
+    @include flexbox();
+    flex-direction: column;
 }
