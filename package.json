@@ -4,7 +4,7 @@
   "description": "description",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/styles-index.scss:./css/styles.css --style compressed",
+    "sass": "sass --watch ./sass/styles-index.scss:./css/styles-index.css --style compressed",
     "prefix": "postcss ./css/styles.css"
   },
   "repository": {
