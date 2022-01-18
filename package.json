@@ -4,8 +4,8 @@
   "description": "description",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/styles.css --style compressed",
-    "prefix": "postcss ./Css/styles.css"
+    "sass": "sass --watch ./sass/styles-index.scss:./css/styles.css --style compressed",
+    "prefix": "postcss ./css/styles.css"
   },
   "repository": {
     "type": "git",
