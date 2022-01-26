@@ -18,6 +18,19 @@
 			transform: left scaleX(0.8);
 			animation: progress-bar $prog-bar-dur $prog-bar-delay both;
         }
+        
+        &__icn{
+            @include flexbox();
+            animation: spinner 3.5s both;
+            
+            & i{
+                margin-top: 200px;
+                text-shadow: 5px 5px 5px $color-tertiary;
+                font-size: 200px;
+                color: $color-primary;
+                animation-duration: 0.9s;
+            }
+        }
     }
 }
 

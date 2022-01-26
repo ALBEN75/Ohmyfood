@@ -74,6 +74,21 @@
     }
 }
 
+@keyframes spinner{
+    0%{
+        visibility: visible;
+        opacity: 1;
+    }
+    50%{
+        visibility: visible;
+        opacity: 1;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
 $breakpoints: (
     desktop: 767px
 );
@@ -95,6 +110,7 @@ body{
 	margin: 0px;
 	width: 100%; 
     @include flexbox();
+    height: 100%;
 
     .progress {
         width: 100%;
@@ -110,6 +126,19 @@ body{
 			transform-origin: left;
 			transform: left scaleX(0.8);
 			animation: progress-bar $prog-bar-dur $prog-bar-delay both;
+        }
+        
+        &__icn{
+            @include flexbox();
+            animation: spinner 3.5s both;
+            
+            & i{
+                margin-top: 200px;
+                text-shadow: 2px 2px 4px $color-primary;
+                font-size: 200px;
+                color: $color-tertiary;
+                animation-duration: 0.9s;
+            }
         }
     }
 }
@@ -198,8 +227,14 @@ body{
             font-weight: 1;
             font-size: 20px;
             padding-left: 2%;
-            text-decoration: underline $color-tertiary; 
-            text-underline-position: left under;
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: #99e2d0;
+            position: absolute;
+            z-index: 20;
+            left: 0px;
+            bottom: -8px;
         }
         
         &__info{
