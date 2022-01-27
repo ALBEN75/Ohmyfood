@@ -15,7 +15,7 @@
             border-radius: 15px;
             background-image: linear-gradient(to right, $color-primary, $color-secondary);
 			transform-origin: left;
-			transform: left scaleX(0.8);
+			transform: scaleX(0.8);
 			animation: progress-bar $prog-bar-dur $prog-bar-delay both;
         }
         

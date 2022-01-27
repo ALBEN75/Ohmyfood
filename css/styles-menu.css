@@ -17,7 +17,7 @@
   }
   75% {
     transform: scaleX(0.81);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    animation-timing-function: cubic-bezier(0.25, 0, 0.25, 1);
     visibility: visible;
     opacity: 1;
   }
@@ -78,21 +78,21 @@ body {
   border-radius: 15px;
   background-image: linear-gradient(to right, #9356DC, #FF79DA);
   transform-origin: left;
-  transform: left scaleX(0.8);
+  transform: scaleX(0.8);
   animation: progress-bar 2000ms 500ms both;
 }
 .load .progress__icn {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: spinner 3s both;
+  animation: spinner 3.5s both;
 }
 .load .progress__icn i {
-  margin-top: 30px;
+  margin-top: 200px;
   text-shadow: 2px 2px 4px #9356DC;
-  font-size: 30px;
+  font-size: 200px;
   color: #99E2D0;
-  animation-duration: 1s;
+  animation-duration: 0.9s;
 }
 
 .header {
@@ -175,18 +175,30 @@ body {
   flex-direction: column;
   padding: 0 2%;
 }
+@media screen and (min-width: 767px) {
+  .menu__table {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 .menu__table h2 {
   font-weight: 1;
   font-size: 20px;
   padding-left: 2%;
+}
+@media screen and (min-width: 767px) {
+  .menu__table h2 {
+    position: absolute;
+    margin-top: -130px;
+  }
+}
+.menu__table h2::after {
+  display: flex;
   content: "";
   width: 50px;
   height: 4px;
-  background: #99e2d0;
-  position: absolute;
-  z-index: 20;
-  left: 0px;
-  bottom: -8px;
+  background: #99E2D0;
 }
 .menu__table__info {
   margin-left: 15px;
@@ -207,10 +219,24 @@ body {
   padding-left: 8px;
   margin-top: 20px;
 }
+.menu__table__price:hover {
+  padding-right: 70px;
+  transition: 0.5s ease;
+}
+.menu__table__validate {
+  display: none;
+}
 .menu .blockmenu {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 767px) {
+  .menu .blockmenu {
+    bottom: -30px;
+    position: relative;
+    margin: 15px;
+  }
 }
 .menu .blockmenu__info-price {
   cursor: pointer;
@@ -271,6 +297,14 @@ body {
   padding: 0px 40px;
   width: 100%;
   max-width: 1200px;
+}
+@media screen and (min-width: 767px) {
+  .foot__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .foot__block .logo {
   font-family: "Shrikhand", sans-serif;
