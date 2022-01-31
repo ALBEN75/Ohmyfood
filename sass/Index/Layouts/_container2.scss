@@ -91,23 +91,35 @@
         }
         
         &-icn{
-            margin-right: 10%;
+            margin-right: 15%;
             font-size: 25px;
+            position: relative;
             
-            &__1{
-                display: block;
+            & i{
+                position: absolute;
+            }
+            
+            & .far{
                 color: black;
-            
+                
                 &:hover{
-                    display: none;
+                    color: transparent;
+                    opacity: 1;
+                    
                 }
             }
         
-            &__2{
-                display: none;
+            & .fas{
+                color: transparent;
+                opacity: 0;
 
                 &:hover{
-                    color: $color-primary;
+                    background-image: linear-gradient(to right, $color-secondary, $color-primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    opacity: 1;
+                    transform: scale(1.15);
+                    transition: all 300ms;
                 }
             }
         }   

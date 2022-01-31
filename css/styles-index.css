@@ -72,6 +72,7 @@ body {
   z-index: 25;
 }
 .load .progress__bar {
+  margin-top: 140px;
   height: 100%;
   border: 3px solid #99E2D0;
   border-radius: 15px;
@@ -87,7 +88,7 @@ body {
   animation: spinner 3.5s both;
 }
 .load .progress__icn i {
-  margin-top: 200px;
+  margin-top: 80px;
   text-shadow: 5px 5px 5px #99E2D0;
   font-size: 200px;
   color: #9356DC;
@@ -330,21 +331,31 @@ main {
   font-weight: bold;
 }
 .restaurant__underblock-icn {
-  margin-right: 10%;
+  margin-right: 15%;
   font-size: 25px;
+  position: relative;
 }
-.restaurant__underblock-icn__1 {
-  display: block;
+.restaurant__underblock-icn i {
+  position: absolute;
+}
+.restaurant__underblock-icn .far {
   color: black;
 }
-.restaurant__underblock-icn__1:hover {
-  display: none;
+.restaurant__underblock-icn .far:hover {
+  color: transparent;
+  opacity: 1;
 }
-.restaurant__underblock-icn__2 {
-  display: none;
+.restaurant__underblock-icn .fas {
+  color: transparent;
+  opacity: 0;
 }
-.restaurant__underblock-icn__2:hover {
-  color: #9356DC;
+.restaurant__underblock-icn .fas:hover {
+  background-image: linear-gradient(to right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transform: scale(1.15);
+  transition: all 300ms;
 }
 
 .foot {

@@ -8,9 +8,10 @@
         width: 100%;
 		height: 30px;
 		position: fixed;
-        z-index: 25;
+        z-index: 1;
         
         &__bar {
+            margin-top: 80px;
             height: 100%;
 			border: 3px solid $color-tertiary;
             border-radius: 15px;
@@ -25,10 +26,10 @@
             animation: spinner 3.5s both;
             
             & i{
-                margin-top: 200px;
-                text-shadow: 2px 2px 4px $color-primary;
+                margin-top: 80px;
+                text-shadow: 2px 2px 4px $color-tertiary;
                 font-size: 200px;
-                color: $color-tertiary;
+                color: $color-primary;
                 animation-duration: 0.9s;
             }
         }
