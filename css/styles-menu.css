@@ -34,7 +34,7 @@
   }
   100% {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.9;
   }
 }
 @keyframes spinner {
@@ -73,7 +73,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   background-color: #F6F6F6;
-  animation: invisible 3s;
+  animation: invisible 3s both;
 }
 
 .load {

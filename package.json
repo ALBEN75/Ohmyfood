@@ -4,8 +4,9 @@
   "description": "description",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main-menu.scss:./css/styles-menu.css --style expanded",
-    "prefix": "postcss ./styles/styles.css"
+    "sass:1": "sass --watch ./sass/main-index.scss:./css/styles-index.css --style expanded",
+    "sass:2": "sass --watch ./sass/main-menu.scss:./css/styles-menu.css --style expanded",
+    "prefix": "postcss ./css/style-menu.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/ALBEN75/Ohmyfood/issues"
   },
-  "homepage": "https://github.com/ALBEN75/Ohmyfood#readme"
+  "homepage": "https://github.com/ALBEN75/Ohmyfood#readme",
+  "devDependencies": {
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.49.0"
+  }
 }
