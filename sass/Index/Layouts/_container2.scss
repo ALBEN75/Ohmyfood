@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
     background: #F6F6F6;
     margin: 0px;
     padding-top: 30px;
@@ -26,7 +25,6 @@
     }
 
     &__block{
-        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -43,14 +41,15 @@
         &-txt{
             @include flexbox();
             position: absolute;
-            background: #99e2d0;
+            background: $color-tertiary;
             top: 20px; 
             right: 20px;
             
             & p{
-                color: #1b6150;
-                padding: 10px 20px;
+                color: darken($color-tertiary, 35%);
+                padding: 8px 15px;
                 margin: 0px;
+                font-weight: bold;
             }
         }
     
@@ -63,7 +62,7 @@
             width: 100%;
             height: 190px;
             
-            & > img{
+            & img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -93,7 +92,6 @@
         &-icn{
             margin-right: 15%;
             font-size: 25px;
-            position: relative;
             
             & i{
                 position: absolute;

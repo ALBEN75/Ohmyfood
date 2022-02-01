@@ -9,12 +9,12 @@
     }
 
     &__block{
-        display: inline;
         padding: 0px 40px;
         width: 100%;
         @include desktop{
-           @include flexbox();
-           flex-direction: column;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
     
         & .logo{
@@ -28,16 +28,14 @@
         }
     
         &-links{
-            display: inline-flex;
+            display: flex;
             flex-direction: column;
             width: auto;
         }
     
         &-link{
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            flex-direction: row;
-            text-align: center;
             color: white;
             height: 30px;
             
