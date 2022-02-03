@@ -216,7 +216,7 @@ body {
 .menu__table h2 {
   font-weight: 1;
   font-size: 20px;
-  padding-left: 2%;
+  margin-left: 4px;
 }
 .menu__table h2::after {
   display: flex;
@@ -224,6 +224,7 @@ body {
   width: 50px;
   height: 4px;
   background: #99E2D0;
+  margin-top: 6px;
 }
 .menu__table__info {
   margin-left: 15px;
