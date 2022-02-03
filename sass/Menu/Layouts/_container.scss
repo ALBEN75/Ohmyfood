@@ -69,7 +69,7 @@
             margin-left: 4px;
         }    
         
-        & h2:after{
+        & h2::after{
             display: flex;
             content: '';
             width: 50px;

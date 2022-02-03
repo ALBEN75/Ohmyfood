@@ -218,7 +218,7 @@ body {
   font-size: 20px;
   margin-left: 4px;
 }
-.menu__table h2:after {
+.menu__table h2::after {
   display: flex;
   content: "";
   width: 50px;
