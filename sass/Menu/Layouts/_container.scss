@@ -142,9 +142,9 @@
             background-color: white;
             box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.16);
             animation: up-down 2s both;
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}) {
-                    animation-delay: 150ms * $i;
+            @for $Y from 1 through 3 {
+                &:nth-child(#{$Y}) {
+                    animation-delay: 150ms * $Y;
                 }
             }
 
